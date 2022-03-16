@@ -1,0 +1,65 @@
+:root{
+    --blanco:#ffffff;
+    --oscuro:#000000;
+    --primario: orangered;
+    --secundario:#0392c2;
+}
+
+/*** Codigo para que se adapte los rem en todo tipo de pantalla ***/
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    font-family: 'Comfortaa', cursive;
+
+}
+/*************************************/
+.titulo{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+    color:var(--secundario)
+}
+
+.titulo span{
+    color:orangered;
+    font-weight: bolder;
+    font-family: 'Inspiration', cursive;
+    font-size: 4.5rem;
+    text-shadow: 2px 2px 2px #353434;
+}
+
+.contenedor{
+    width: 120rem;
+   /* margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;*/
+
+    /*margin: 0 auto 0 auto;*/
+    margin: 0 auto;
+}
+.nav-bg{
+    background-color: var(--secundario);
+}
+.navegacion-principal{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navegacion-principal a{
+    padding: 1rem;
+    color:var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color:var(--blanco);    
+    transition:  width 3s,background-color 0.5s;
+    border-radius: 20px;
+}
